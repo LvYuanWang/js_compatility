@@ -1,40 +1,31 @@
-// const a = 1;
-const b = {
-  name: "John",
-  age: 19,
-  area: "China"
-}
-
-const { name, age } = b;
-console.log(name, age);
-
-class Person {
-  constructor(name) {
-    this.name = name;
+class A {
+  a = 1;
+  constructor() {
+    this.b = 3;
   }
 }
 
-sendRequest = async () => {
-  const { data } = fetch("https://www.baidu.com");
-  console.log(data);
-}
 
-(async () => {
-  await sendRequest();
-})()
+// function Print() {
+//   console.log(this.loginId);
+// }
 
-const c = 3;
+// const obj = {
+//   loginId: "abc"
+// };
 
-function testMethod() {
-  (() => {
-    console.log(this);
-  })()
-}
-testMethod();
+// obj:: Print();
 
-const arr = Array.of(1, 2, 3);
-console.log(arr);
 
-new Promise(resolve => {
-  resolve();
-})
+// const obj = {
+//   foo: {
+//     bar: {
+//       baz: 42
+//     }
+//   }
+// }
+
+// const baz = obj?.foo?.bar?.baz; // 42
+// const safe = obj?.qux?.baz; // undefined
+
+// console.log(baz, safe);

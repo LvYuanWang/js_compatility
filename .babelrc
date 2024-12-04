@@ -10,5 +10,16 @@
     ]
   ],
   // 插件
-  "plugins": []
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true // 使用宽松模式
+      }
+    ], // 支持类属性
+    "@babel/plugin-proposal-function-bind", // 支持函数绑定
+    "@babel/plugin-proposal-optional-chaining", // 支持可选链
+    "transform-remove-console", // 移除 console
+    "@babel/plugin-transform-runtime" // 使用 @babel-runtime, 让代码更加简洁
+  ]
 }
