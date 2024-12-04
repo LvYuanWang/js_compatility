@@ -1,4 +1,14 @@
 {
-  "presets": [], // 预设
-  "plugins": [] // 插件
+  // 预设
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage", // 按需加载 polyfill
+        "corejs": 3 // 指定 core-js 版本
+      }
+    ]
+  ],
+  // 插件
+  "plugins": []
 }
